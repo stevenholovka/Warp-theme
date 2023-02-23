@@ -1,0 +1,60 @@
+name: Feature Request
+description: "Have a great new idea? We'd love to know, please search through our existing feature requests, and upvote it if its already been filed."
+labels: "Feature"
+body:
+  - type: input  
+    id: "discord"
+    attributes:
+      label: "Discord username (optional)"
+      description: "If you're in our Discord server please include your formatted like so: elvis#4747. This is so we can give you the Bug Catcher Discord role."
+      placeholder: username#4747
+    validations:
+      required: false
+  - type: textarea
+    id: "describe-solution"
+    attributes:
+      label: "Describe the solution you'd like?"
+      description: "A clear and concise description of what you want to happen."
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: "related-to-problem"
+    attributes:
+      label: "Is your feature request related to a problem? Please describe."
+      description: "A clear and concise description of what the problem is."
+      placeholder: "I'm always frustrated when [...]"
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: "additional-context"
+    attributes:
+      label: "Additional context"
+      description: "Add any other context or screenshots about the feature request here. If you want to upload a picture you can drag one in from Finder."
+    validations:
+      required: false
+  - type: dropdown
+    id: "importance"
+    attributes:
+      label: "How important is this feature to you?"
+      multiple: false
+      options:
+        - "1 (Not too important)"
+        - "2"
+        - "3"
+        - "4"
+        - "5 (Can't work without it!)"
+    validations:
+      required: true
+  - type: dropdown
+    id: "linear-label-feature"
+    attributes:
+      label: "Warp Internal (ignore) - linear-label:770f6576-d6c0-4e4f-a259-fc64b5156087"
+      multiple: false
+      options:
+        - Ignore
+        # - Windows
+        # - Linux
+    validations:
+      required: false

@@ -1,0 +1,9 @@
+[submodule "themes"]
+	path = themes
+	url = git@github.com:warpdotdev/themes.git
+[submodule "keysets"]
+	path = keysets
+	url = git@github.com:warpdotdev/keysets.git
+[submodule "workflows"]
+	path = workflows
+	url = git@github.com:warpdotdev/workflows.git
